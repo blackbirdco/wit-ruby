@@ -1,18 +1,8 @@
-require 'wit/wit'
-
 describe Wit do
-
-  describe ".message" do
-
-    it "returns the expected output" do
-      res = Wit.message('deploy master foo to bar')
-      expect( res ).to be_a Wit::Result
-      expect( res.msg_body ).to eq 'deploy master foo to bar'
-      expect( res.intent ).to eq 'deploy'
-      expect( res.entities.branch ).to be_a Wit::Entity
-      expect( res.entities['branch'].value ).to eq 'master'
-    end
-
+  it "defines 2 exceptions classes" do
+    expect do
+      Wit::Unauthorized.new
+      Wit::BadResponse.new
+    end.not_to raise_exception
   end
-
 end

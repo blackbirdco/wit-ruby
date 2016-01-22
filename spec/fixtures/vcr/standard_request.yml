@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.wit.ai/message?q=un%20bar%20pr%C3%A8s%20de%20paris?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer <WIT_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.0
+      Date:
+      - Fri, 22 Jan 2016 18:03:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '350'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJtc2dfaWQiIDogImFiODI5MDYyLTU3MWUtNGI5ZS1hOTQxLTg4YzEx
+        MjI4MjRmMSIsCiAgIl90ZXh0IiA6ICJ1biBiYXIgcHLDqHMgZGUgcGFyaXM/
+        IiwKICAib3V0Y29tZXMiIDogWyB7CiAgICAiX3RleHQiIDogInVuIGJhciBw
+        csOocyBkZSBwYXJpcz8iLAogICAgImNvbmZpZGVuY2UiIDogMC41NzUsCiAg
+        ICAiaW50ZW50IiA6ICJMb2NhdGlvbiIsCiAgICAiZW50aXRpZXMiIDogewog
+        ICAgICAibG9jYXRpb24iIDogWyB7CiAgICAgICAgInR5cGUiIDogInZhbHVl
+        IiwKICAgICAgICAidmFsdWUiIDogInBhcmlzIiwKICAgICAgICAic3VnZ2Vz
+        dGVkIiA6IHRydWUKICAgICAgfSBdCiAgICB9CiAgfSBdCn0=
+    http_version: 
+  recorded_at: Fri, 22 Jan 2016 18:03:48 GMT
+recorded_with: VCR 3.0.1
