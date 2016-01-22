@@ -34,15 +34,15 @@ result.entities["location"].first.value # the value of the first location extrac
 
 ### Result properties/methods
 
-* *id* The unique message id provided back from Wit.
-* *text* The original message sent.
-* *intent* The intent, as determined by Wit.
-* *confidence* The confidence level that Wit determined.
-* *entities* Hash of entities, which contains an array of n extracted entities
+* **id** The unique message id provided back from Wit.
+* **text** The original message sent.
+* **intent** The intent, as determined by Wit.
+* **confidence** The confidence level that Wit determined.
+* **entities** Hash of entities, which contains an array of n extracted entities
 
 ### Entity properties/methods
 
-* *value*: the value extracted by wit
+* **value**: the value extracted by wit
 
 ## License
 
